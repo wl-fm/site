@@ -9,12 +9,27 @@
   "note_en": "",
   "note_id": "",
   "details": [
-    { "en": "100% Cotton", "id": "100% Katun" },
-    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
-    { "en": "Available in 14 colorways", "id": "Tersedia dalam 14 warna" },
-    { "en": "Detachable strap", "id": "Tali yang dapat dilepas" },
-    { "en": "Reversible", "id": "Dapat dibalik" }
+    {
+      "en": "100% Cotton",
+      "id": "100% Katun"
+    },
+    {
+      "en": "Hand-stamped Batik (Batik Cap)",
+      "id": "Batik Cap"
+    },
+    {
+      "en": "Available in 14 colorways",
+      "id": "Tersedia dalam 14 warna"
+    },
+    {
+      "en": "Detachable strap",
+      "id": "Tali yang dapat dilepas"
+    },
+    {
+      "en": "Reversible",
+      "id": "Dapat dibalik"
+    }
   ],
-  "main_image": "Assets/Collection/Obi Belt/obi-belt-1.jpg",
+  "main_image": "/Assets/Collection/Obi Belt/obi-belt-1.jpg",
   "gallery": []
 }

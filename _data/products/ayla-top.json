@@ -9,17 +9,29 @@
   "note_en": "Finished with a discreet button at the back of the neck for easy wear.",
   "note_id": "Dilengkapi dengan kancing diskrit di bagian belakang leher untuk kemudahan pemakaian.",
   "details": [
-    { "en": "100% Cotton & Linen (plain fabric)", "id": "100% Katun & Linen (kain polos)" },
-    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap (Batik Tangan)" },
-    { "en": "Available in 8 colorways", "id": "Tersedia dalam 8 warna" },
-    { "en": "Fit: Flexible fit across sizes", "id": "Ukuran: Fleksibel di semua ukuran" }
+    {
+      "en": "100% Cotton & Linen (plain fabric)",
+      "id": "100% Katun & Linen (kain polos)"
+    },
+    {
+      "en": "Hand-stamped Batik (Batik Cap)",
+      "id": "Batik Cap (Batik Tangan)"
+    },
+    {
+      "en": "Available in 8 colorways",
+      "id": "Tersedia dalam 8 warna"
+    },
+    {
+      "en": "Fit: Flexible fit across sizes",
+      "id": "Ukuran: Fleksibel di semua ukuran"
+    }
   ],
-  "main_image": "Assets/Collection/Ayla Top/ayla-4.jpg",
+  "main_image": "/Assets/Collection/Ayla Top/ayla-4.jpg",
   "gallery": [
-    "Assets/Collection/Ayla Top/ayla-4.jpg",
-    "Assets/Collection/Ayla Top/ayla-5.jpg",
-    "Assets/Collection/Ayla Top/ayla-7.jpg",
-    "Assets/Collection/Ayla Top/ayla-9.jpg",
-    "Assets/Collection/Ayla Top/ayla-11.jpg"
+    "/Assets/Collection/Ayla Top/ayla-4.jpg",
+    "/Assets/Collection/Ayla Top/ayla-5.jpg",
+    "/Assets/Collection/Ayla Top/ayla-7.jpg",
+    "/Assets/Collection/Ayla Top/ayla-9.jpg",
+    "/Assets/Collection/Ayla Top/ayla-11.jpg"
   ]
 }

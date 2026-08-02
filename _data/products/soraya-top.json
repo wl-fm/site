@@ -9,16 +9,28 @@
   "note_en": "",
   "note_id": "",
   "details": [
-    { "en": "100% Cotton", "id": "100% Katun" },
-    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
-    { "en": "Available in 6 colorways", "id": "Tersedia dalam 6 warna" },
-    { "en": "Available in two sizes: S-M and L-XL", "id": "Tersedia dalam dua ukuran: S-M dan L-XL" }
+    {
+      "en": "100% Cotton",
+      "id": "100% Katun"
+    },
+    {
+      "en": "Hand-stamped Batik (Batik Cap)",
+      "id": "Batik Cap"
+    },
+    {
+      "en": "Available in 6 colorways",
+      "id": "Tersedia dalam 6 warna"
+    },
+    {
+      "en": "Available in two sizes: S-M and L-XL",
+      "id": "Tersedia dalam dua ukuran: S-M dan L-XL"
+    }
   ],
-  "main_image": "Assets/Collection/Soraya Top/soraya-2.jpg",
+  "main_image": "/Assets/Collection/Soraya Top/soraya-2.jpg",
   "gallery": [
-    "Assets/Collection/Soraya Top/soraya-2.jpg",
-    "Assets/Collection/Soraya Top/soraya-3.jpg",
-    "Assets/Collection/Soraya Top/soraya-4.jpg",
-    "Assets/Collection/Soraya Top/soraya-6.jpg"
+    "/Assets/Collection/Soraya Top/soraya-2.jpg",
+    "/Assets/Collection/Soraya Top/soraya-3.jpg",
+    "/Assets/Collection/Soraya Top/soraya-4.jpg",
+    "/Assets/Collection/Soraya Top/soraya-6.jpg"
   ]
 }

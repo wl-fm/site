@@ -9,17 +9,29 @@
   "note_en": "",
   "note_id": "",
   "details": [
-    { "en": "100% Cotton", "id": "100% Katun" },
-    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
-    { "en": "Available in 9 colorways", "id": "Tersedia dalam 9 warna" },
-    { "en": "Fit: Flexible fit across sizes", "id": "Ukuran: Fleksibel di semua ukuran" }
+    {
+      "en": "100% Cotton",
+      "id": "100% Katun"
+    },
+    {
+      "en": "Hand-stamped Batik (Batik Cap)",
+      "id": "Batik Cap"
+    },
+    {
+      "en": "Available in 9 colorways",
+      "id": "Tersedia dalam 9 warna"
+    },
+    {
+      "en": "Fit: Flexible fit across sizes",
+      "id": "Ukuran: Fleksibel di semua ukuran"
+    }
   ],
-  "main_image": "Assets/Collection/Maya Top/maya-2.jpg",
+  "main_image": "/Assets/Collection/Maya Top/maya-2.jpg",
   "gallery": [
-    "Assets/Collection/Maya Top/maya-2.jpg",
-    "Assets/Collection/Maya Top/maya-7.jpg",
-    "Assets/Collection/Maya Top/maya-8.jpg",
-    "Assets/Collection/Maya Top/maya-10.jpg",
-    "Assets/Collection/Maya Top/maya-11.jpg"
+    "/Assets/Collection/Maya Top/maya-2.jpg",
+    "/Assets/Collection/Maya Top/maya-7.jpg",
+    "/Assets/Collection/Maya Top/maya-8.jpg",
+    "/Assets/Collection/Maya Top/maya-10.jpg",
+    "/Assets/Collection/Maya Top/maya-11.jpg"
   ]
 }

@@ -8,7 +8,7 @@ backend:
 # local_backend: true
 
 media_folder: "Assets/uploads"
-public_folder: "Assets/uploads"
+public_folder: "/Assets/uploads"
 
 locale: "en"
 
@@ -24,7 +24,7 @@ collections:
     create: true
     slug: "{{fields.title | slugify}}"
     media_folder: "Assets/Collection/{{fields.title}}"
-    public_folder: "Assets/Collection/{{fields.title}}"
+    public_folder: "/Assets/Collection/{{fields.title}}"
     sortable_fields: ['order', 'title']
     fields:
       - { label: "Product Name", name: "title", widget: "string" }
@@ -57,7 +57,7 @@ collections:
     create: true
     slug: "{{fields.title_en | slugify}}"
     media_folder: "Assets/Events"
-    public_folder: "Assets/Events"
+    public_folder: "/Assets/Events"
     sortable_fields: ['order', 'title_en']
     fields:
       - { label: "Event Title (EN)", name: "title_en", widget: "string" }

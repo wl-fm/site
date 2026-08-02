@@ -9,16 +9,28 @@
   "note_en": "Designed with a hidden button and three buttonhole options on each strap, making it adjustable and can be worn strapped, crossed, or styled as a tube top.",
   "note_id": "Dirancang dengan kancing tersembunyi dan tiga pilihan lubang kancing di setiap tali, membuatnya dapat disesuaikan dan dapat dipakai dengan tali, silang, atau dimodel sebagai tube top.",
   "details": [
-    { "en": "100% Cotton", "id": "100% Katun" },
-    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
-    { "en": "Available in 8 colorways", "id": "Tersedia dalam 8 warna" },
-    { "en": "Adjustable linen strap", "id": "Tali linen yang dapat disesuaikan" }
+    {
+      "en": "100% Cotton",
+      "id": "100% Katun"
+    },
+    {
+      "en": "Hand-stamped Batik (Batik Cap)",
+      "id": "Batik Cap"
+    },
+    {
+      "en": "Available in 8 colorways",
+      "id": "Tersedia dalam 8 warna"
+    },
+    {
+      "en": "Adjustable linen strap",
+      "id": "Tali linen yang dapat disesuaikan"
+    }
   ],
-  "main_image": "Assets/Collection/Laras Top/laras-4.jpg",
+  "main_image": "/Assets/Collection/Laras Top/laras-4.jpg",
   "gallery": [
-    "Assets/Collection/Laras Top/laras-4.jpg",
-    "Assets/Collection/Laras Top/laras-5.jpg",
-    "Assets/Collection/Laras Top/laras-12.jpg",
-    "Assets/Collection/Laras Top/laras-13.jpg"
+    "/Assets/Collection/Laras Top/laras-4.jpg",
+    "/Assets/Collection/Laras Top/laras-5.jpg",
+    "/Assets/Collection/Laras Top/laras-12.jpg",
+    "/Assets/Collection/Laras Top/laras-13.jpg"
   ]
 }

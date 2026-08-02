@@ -3,8 +3,8 @@
   "story_heading_id": "Batik untuk Kehidupan Sehari-hari",
   "story_en": "With Love, From Mom is a casual batik brand designed for everyday comfort. Crafted from curated hand-stamped batik made by artisans across Java and combined with natural fabrics such as cotton and linen, each piece is wrapped with a touch of storytelling to create batik that feels light, warm, and effortlessly relaxed without looking overdressed.",
   "story_id": "With Love, From Mom adalah merek batik kasual yang dirancang untuk kenyamanan sehari-hari. Dibuat dari batik cap pilihan oleh pengrajin dari seluruh Jawa, dipadukan dengan kain alami seperti katun dan linen, setiap pakaian hadir dengan sentuhan cerita yang membuat batik terasa ringan, hangat, dan santai tanpa terlihat berlebihan.",
-  "story_closing_en": "Because batik is not meant to be stored away — but to be lived in.",
-  "story_closing_id": "Karena batik bukan untuk disimpan — melainkan untuk dijalani.",
+  "story_closing_en": "Because batik is not meant to be stored away \u2014 but to be lived in.",
+  "story_closing_id": "Karena batik bukan untuk disimpan \u2014 melainkan untuk dijalani.",
   "vision_heading_en": "A Natural Part of Everyday Life",
   "vision_heading_id": "Bagian Alami dari Kehidupan Sehari-hari",
   "vision_en": "To make batik a natural part of modern everyday life. Worn with ease, carried with meaning, and passed forward with love.",
@@ -13,5 +13,5 @@
   "purpose_heading_id": "Menjaga Batik Tetap Hidup",
   "purpose_en": "To keep batik alive by helping people feel comfortable and confident wearing it in their own way.",
   "purpose_id": "Menjaga batik tetap hidup dengan membantu orang merasa nyaman dan percaya diri memakainya dengan cara mereka sendiri.",
-  "hero_image": "Assets/about-hero.jpg"
+  "hero_image": "/Assets/about-hero.jpg"
 }
