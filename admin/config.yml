@@ -23,8 +23,8 @@ collections:
     extension: "json"
     create: true
     slug: "{{fields.title | slugify}}"
-    media_folder: "Assets/Collection/{{fields.title}}"
-    public_folder: "/Assets/Collection/{{fields.title}}"
+    media_folder: "Assets/Collection/{{slug}}"
+    public_folder: "/Assets/Collection/{{slug}}"
     sortable_fields: ['order', 'title']
     fields:
       - { label: "Product Name", name: "title", widget: "string" }
