@@ -1,0 +1,20 @@
+{
+  "title": "Obi Belt",
+  "slug": "obi",
+  "order": 5,
+  "category_en": "The Finishing Touch",
+  "category_id": "Sentuhan Akhir",
+  "description_en": "The Obi Belt was created as a finishing touch. A piece that allows every silhouette to feel more personal, playful, and uniquely yours. Featuring two-tone batik combinations and a detachable strap, each piece can be styled and adjusted in multiple ways depending on the mood and moment.",
+  "description_id": "Obi Belt diciptakan sebagai sentuhan akhir. Sebuah karya yang membuat setiap siluet terasa lebih personal, menyenangkan, dan unik milik Anda. Menampilkan kombinasi batik dua warna dan tali yang dapat dilepas, setiap karya dapat dimodel dan disesuaikan dalam berbagai cara tergantung suasana hati dan momen.",
+  "note_en": "",
+  "note_id": "",
+  "details": [
+    { "en": "100% Cotton", "id": "100% Katun" },
+    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
+    { "en": "Available in 14 colorways", "id": "Tersedia dalam 14 warna" },
+    { "en": "Detachable strap", "id": "Tali yang dapat dilepas" },
+    { "en": "Reversible", "id": "Dapat dibalik" }
+  ],
+  "main_image": "Assets/Collection/Obi Belt/obi-belt-1.jpg",
+  "gallery": []
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Laras Top",
+  "slug": "laras",
+  "order": 4,
+  "category_en": "Convertible Strap Top",
+  "category_id": "Atasan Tali Konvertibel",
+  "description_en": "Inspired by the Javanese word laras, meaning harmony and balance. The wide straps bring structure, while the elasticated bust moves comfortably with you. Calm, balanced, and effortless, Laras is designed to stay in tune with your body and your day.",
+  "description_id": "Terinspirasi dari kata Jawa laras, yang berarti harmoni dan keseimbangan. Tali lebar membawa struktur, sementara bust elastis bergerak dengan nyaman bersama Anda. Tenang, seimbang, dan tanpa usaha, Laras dirancang untuk tetap selaras dengan tubuh dan hari Anda.",
+  "note_en": "Designed with a hidden button and three buttonhole options on each strap, making it adjustable and can be worn strapped, crossed, or styled as a tube top.",
+  "note_id": "Dirancang dengan kancing tersembunyi dan tiga pilihan lubang kancing di setiap tali, membuatnya dapat disesuaikan dan dapat dipakai dengan tali, silang, atau dimodel sebagai tube top.",
+  "details": [
+    { "en": "100% Cotton", "id": "100% Katun" },
+    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
+    { "en": "Available in 8 colorways", "id": "Tersedia dalam 8 warna" },
+    { "en": "Adjustable linen strap", "id": "Tali linen yang dapat disesuaikan" }
+  ],
+  "main_image": "Assets/Collection/Laras Top/laras-4.jpg",
+  "gallery": [
+    "Assets/Collection/Laras Top/laras-4.jpg",
+    "Assets/Collection/Laras Top/laras-5.jpg",
+    "Assets/Collection/Laras Top/laras-12.jpg",
+    "Assets/Collection/Laras Top/laras-13.jpg"
+  ]
+}

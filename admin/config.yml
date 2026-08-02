@@ -8,11 +8,83 @@ backend:
 # local_backend: true
 
 media_folder: "Assets/uploads"
-public_folder: "/Assets/uploads"
+public_folder: "Assets/uploads"
 
 locale: "en"
 
 collections:
+
+  # ── Collections / Products ─────────────────────────────────────
+  # Each product gets its OWN asset folder: Assets/Collection/<Product Name>/
+  - name: "products"
+    label: "Collections"
+    folder: "_data/products"
+    create: true
+    slug: "{{fields.title | slugify}}"
+    media_folder: "Assets/Collection/{{fields.title}}"
+    public_folder: "Assets/Collection/{{fields.title}}"
+    sortable_fields: ['order', 'title']
+    fields:
+      - { label: "Product Name", name: "title", widget: "string" }
+      - { label: "Anchor / Slug", name: "slug", widget: "string", hint: "Short ID for page anchor, e.g. ayla" }
+      - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
+      - { label: "Category Label (EN)", name: "category_en", widget: "string", hint: "e.g. Sleeveless Boxy Top" }
+      - { label: "Category Label (ID)", name: "category_id", widget: "string" }
+      - { label: "Description (EN)", name: "description_en", widget: "text" }
+      - { label: "Description (ID)", name: "description_id", widget: "text" }
+      - { label: "Second Paragraph / Note (EN)", name: "note_en", widget: "text", required: false }
+      - { label: "Second Paragraph / Note (ID)", name: "note_id", widget: "text", required: false }
+      - label: "Details List"
+        name: "details"
+        widget: "list"
+        fields:
+          - { label: "Detail (EN)", name: "en", widget: "string" }
+          - { label: "Detail (ID)", name: "id", widget: "string" }
+      - { label: "Main / Hero Image", name: "main_image", widget: "image" }
+      - label: "Gallery Images"
+        name: "gallery"
+        widget: "list"
+        field: { label: "Image", name: "image", widget: "image" }
+
+  # ── Events ────────────────────────────────────────────────────
+  - name: "events"
+    label: "Events"
+    folder: "_data/events"
+    create: true
+    slug: "{{fields.title_en | slugify}}"
+    media_folder: "Assets/Events"
+    public_folder: "Assets/Events"
+    sortable_fields: ['order', 'title_en']
+    fields:
+      - { label: "Event Title (EN)", name: "title_en", widget: "string" }
+      - { label: "Event Title (ID)", name: "title_id", widget: "string" }
+      - { label: "Location & Year", name: "meta", widget: "string", hint: "e.g. M Bloc Space, Jakarta • 2026" }
+      - { label: "Description (EN)", name: "description_en", widget: "text" }
+      - { label: "Description (ID)", name: "description_id", widget: "text" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
+
+  # ── FAQ ───────────────────────────────────────────────────────
+  - name: "faq"
+    label: "FAQ"
+    folder: "_data/faq"
+    create: true
+    slug: "{{fields.question_en | slugify}}"
+    sortable_fields: ['order', 'category']
+    fields:
+      - { label: "Question (EN)", name: "question_en", widget: "string" }
+      - { label: "Question (ID)", name: "question_id", widget: "string" }
+      - { label: "Answer (EN)", name: "answer_en", widget: "text" }
+      - { label: "Answer (ID)", name: "answer_id", widget: "text" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Brand & Design Philosophy", value: "brand" }
+          - { label: "Craftsmanship & Materials", value: "craftsmanship" }
+          - { label: "Sustainability", value: "sustainability" }
+          - { label: "Care & Shipping", value: "care" }
+      - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
 
   # ── Site Settings ──────────────────────────────────────────────
   - name: "settings"
@@ -24,76 +96,13 @@ collections:
         fields:
           - { label: "Site Title (EN)", name: "title_en", widget: "string" }
           - { label: "Site Title (ID)", name: "title_id", widget: "string" }
-          - { label: "Tagline (EN)", name: "tagline_en", widget: "string" }
-          - { label: "Tagline (ID)", name: "tagline_id", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone / WhatsApp", name: "phone", widget: "string" }
           - { label: "Instagram Handle", name: "instagram", widget: "string" }
           - { label: "Address (EN)", name: "address_en", widget: "text" }
           - { label: "Address (ID)", name: "address_id", widget: "text" }
 
-  # ── Collections / Products ─────────────────────────────────────
-  - name: "products"
-    label: "Collections"
-    folder: "_data/products"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Product Name", name: "title", widget: "string" }
-      - { label: "Slug / ID", name: "slug", widget: "string" }
-      - { label: "Category (EN)", name: "category_en", widget: "string", hint: "e.g. Sleeveless Boxy Top" }
-      - { label: "Category (ID)", name: "category_id", widget: "string" }
-      - { label: "Description (EN)", name: "description_en", widget: "markdown" }
-      - { label: "Description (ID)", name: "description_id", widget: "markdown" }
-      - label: "Details"
-        name: "details"
-        widget: "list"
-        fields:
-          - { label: "Detail (EN)", name: "en", widget: "string" }
-          - { label: "Detail (ID)", name: "id", widget: "string" }
-      - { label: "Main Image", name: "main_image", widget: "image" }
-      - label: "Gallery Images"
-        name: "gallery"
-        widget: "list"
-        field: { label: "Image", name: "image", widget: "image" }
-
-  # ── Events ────────────────────────────────────────────────────
-  - name: "events"
-    label: "Events"
-    folder: "_data/events"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Event Title (EN)", name: "title_en", widget: "string" }
-      - { label: "Event Title (ID)", name: "title_id", widget: "string" }
-      - { label: "Location & Year", name: "meta", widget: "string", hint: "e.g. M Bloc Space, Jakarta • 2026" }
-      - { label: "Description (EN)", name: "description_en", widget: "markdown" }
-      - { label: "Description (ID)", name: "description_id", widget: "markdown" }
-      - { label: "Cover Image", name: "image", widget: "image" }
-      - { label: "Date", name: "date", widget: "datetime" }
-
-  # ── FAQ ───────────────────────────────────────────────────────
-  - name: "faq"
-    label: "FAQ"
-    folder: "_data/faq"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Question (EN)", name: "question_en", widget: "string" }
-      - { label: "Question (ID)", name: "question_id", widget: "string" }
-      - { label: "Answer (EN)", name: "answer_en", widget: "markdown" }
-      - { label: "Answer (ID)", name: "answer_id", widget: "markdown" }
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options:
-          - { label: "Brand & Design Philosophy", value: "brand" }
-          - { label: "Craftsmanship & Materials", value: "craftsmanship" }
-          - { label: "Sustainability", value: "sustainability" }
-          - { label: "Care & Shipping", value: "care" }
-      - { label: "Order", name: "order", widget: "number", value_type: "int" }
-
-  # ── About Page ────────────────────────────────────────────────
+  # ── Pages ─────────────────────────────────────────────────────
   - name: "pages"
     label: "Pages"
     files:
@@ -103,10 +112,16 @@ collections:
         fields:
           - { label: "Story Heading (EN)", name: "story_heading_en", widget: "string" }
           - { label: "Story Heading (ID)", name: "story_heading_id", widget: "string" }
-          - { label: "Story Body (EN)", name: "story_en", widget: "markdown" }
-          - { label: "Story Body (ID)", name: "story_id", widget: "markdown" }
-          - { label: "Vision (EN)", name: "vision_en", widget: "text" }
-          - { label: "Vision (ID)", name: "vision_id", widget: "text" }
-          - { label: "Purpose (EN)", name: "purpose_en", widget: "text" }
-          - { label: "Purpose (ID)", name: "purpose_id", widget: "text" }
+          - { label: "Story Body (EN)", name: "story_en", widget: "text" }
+          - { label: "Story Body (ID)", name: "story_id", widget: "text" }
+          - { label: "Story Closing Line (EN)", name: "story_closing_en", widget: "string" }
+          - { label: "Story Closing Line (ID)", name: "story_closing_id", widget: "string" }
+          - { label: "Vision Heading (EN)", name: "vision_heading_en", widget: "string" }
+          - { label: "Vision Heading (ID)", name: "vision_heading_id", widget: "string" }
+          - { label: "Vision Text (EN)", name: "vision_en", widget: "text" }
+          - { label: "Vision Text (ID)", name: "vision_id", widget: "text" }
+          - { label: "Purpose Heading (EN)", name: "purpose_heading_en", widget: "string" }
+          - { label: "Purpose Heading (ID)", name: "purpose_heading_id", widget: "string" }
+          - { label: "Purpose Text (EN)", name: "purpose_en", widget: "text" }
+          - { label: "Purpose Text (ID)", name: "purpose_id", widget: "text" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }

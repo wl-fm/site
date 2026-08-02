@@ -1,0 +1,24 @@
+{
+  "title": "Soraya Top",
+  "slug": "soraya",
+  "order": 3,
+  "category_en": "Sleeveless Kutubaru Top",
+  "category_id": "Atasan Kutubaru Tanpa Lengan",
+  "description_en": "Graceful on the outside and simple at heart, Soraya carries a quiet radiance. Its Kutubaru-inspired outer panel brings an elegant heritage touch, while the cropped inner layer keeps it easy and modern. A silhouette designed to shine effortlessly, wrapped in the warmth of tradition.",
+  "description_id": "Anggun di luar dan sederhana di dalam, Soraya membawa cahaya yang tenang. Panel luar berinspirasikan Kutubaru menghadirkan sentuhan warisan yang elegan, sementara lapisan dalam yang pendek membuatnya mudah dan modern. Sebuah siluet yang dirancang untuk bersinar tanpa usaha, dibungkus dalam kehangatan tradisi.",
+  "note_en": "",
+  "note_id": "",
+  "details": [
+    { "en": "100% Cotton", "id": "100% Katun" },
+    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap" },
+    { "en": "Available in 6 colorways", "id": "Tersedia dalam 6 warna" },
+    { "en": "Available in two sizes: S-M and L-XL", "id": "Tersedia dalam dua ukuran: S-M dan L-XL" }
+  ],
+  "main_image": "Assets/Collection/Soraya Top/soraya-2.jpg",
+  "gallery": [
+    "Assets/Collection/Soraya Top/soraya-2.jpg",
+    "Assets/Collection/Soraya Top/soraya-3.jpg",
+    "Assets/Collection/Soraya Top/soraya-4.jpg",
+    "Assets/Collection/Soraya Top/soraya-6.jpg"
+  ]
+}

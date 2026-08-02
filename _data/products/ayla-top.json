@@ -1,0 +1,25 @@
+{
+  "title": "Ayla Top",
+  "slug": "ayla",
+  "order": 1,
+  "category_en": "Sleeveless Boxy Top",
+  "category_id": "Atasan Boxy Tanpa Lengan",
+  "description_en": "Ayla's letter speaks of simplicity, calmness, and quiet warmth. The Ayla top reflects this through its clean minimal front and bright batik side panels, adding soft contrast and an effortless glow without feeling overwhelming.",
+  "description_id": "Surat Ayla berbicara tentang kesederhanaan, ketenangan, dan kehangatan yang tenang. Atasan Ayla mencerminkan hal ini melalui bagian depan yang bersih dan minimal serta panel batik cerah di sisi, menambahkan kontras lembut dan cahaya tanpa usaha tanpa terasa berlebihan.",
+  "note_en": "Finished with a discreet button at the back of the neck for easy wear.",
+  "note_id": "Dilengkapi dengan kancing diskrit di bagian belakang leher untuk kemudahan pemakaian.",
+  "details": [
+    { "en": "100% Cotton & Linen (plain fabric)", "id": "100% Katun & Linen (kain polos)" },
+    { "en": "Hand-stamped Batik (Batik Cap)", "id": "Batik Cap (Batik Tangan)" },
+    { "en": "Available in 8 colorways", "id": "Tersedia dalam 8 warna" },
+    { "en": "Fit: Flexible fit across sizes", "id": "Ukuran: Fleksibel di semua ukuran" }
+  ],
+  "main_image": "Assets/Collection/Ayla Top/ayla-4.jpg",
+  "gallery": [
+    "Assets/Collection/Ayla Top/ayla-4.jpg",
+    "Assets/Collection/Ayla Top/ayla-5.jpg",
+    "Assets/Collection/Ayla Top/ayla-7.jpg",
+    "Assets/Collection/Ayla Top/ayla-9.jpg",
+    "Assets/Collection/Ayla Top/ayla-11.jpg"
+  ]
+}
