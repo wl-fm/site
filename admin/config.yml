@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: wl-fm/site
   branch: main
+  base_url: https://wl-fm.pages.dev
 
 # Local backend for development — uncomment when testing locally:
 # local_backend: true
