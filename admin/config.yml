@@ -2,7 +2,7 @@ backend:
   name: github
   repo: wl-fm/site
   branch: main
-  base_url: https://wl-fm.pages.dev
+  base_url: https://wlfm.pages.dev
 
 # Local backend for development — uncomment when testing locally:
 # local_backend: true
