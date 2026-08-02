@@ -19,6 +19,8 @@ collections:
   - name: "products"
     label: "Collections"
     folder: "_data/products"
+    format: "json"
+    extension: "json"
     create: true
     slug: "{{fields.title | slugify}}"
     media_folder: "Assets/Collection/{{fields.title}}"
@@ -50,6 +52,8 @@ collections:
   - name: "events"
     label: "Events"
     folder: "_data/events"
+    format: "json"
+    extension: "json"
     create: true
     slug: "{{fields.title_en | slugify}}"
     media_folder: "Assets/Events"
@@ -68,6 +72,8 @@ collections:
   - name: "faq"
     label: "FAQ"
     folder: "_data/faq"
+    format: "json"
+    extension: "json"
     create: true
     slug: "{{fields.question_en | slugify}}"
     sortable_fields: ['order', 'category']
