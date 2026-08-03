@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://wlfm.pages.dev
 
-# Local backend for development — uncomment when testing locally:
+# Local backend for development - uncomment when testing locally:
 # local_backend: true
 
 media_folder: "/Assets/uploads"

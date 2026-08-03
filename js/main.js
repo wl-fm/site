@@ -1,5 +1,5 @@
 // ============================================================
-// WLFM — main.js
+// WLFM - main.js
 // Handles: parallax, nav scroll, language toggle, fade-in,
 //          hamburger menu, FAQ accordion, image thumbnails
 // Exposes window.wlfmReInit() for cms-loader.js to call

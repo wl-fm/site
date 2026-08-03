@@ -9,7 +9,7 @@ export async function onRequest(context) {
   const code = url.searchParams.get("code");
 
   if (!code) {
-    return errorPage("Missing OAuth code — please try logging in again.");
+    return errorPage("Missing OAuth code - please try logging in again.");
   }
 
   // Exchange the code for an access token

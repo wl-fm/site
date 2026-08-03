@@ -1,5 +1,5 @@
 // ============================================================
-// js/cms-loader.js — Fetches CMS JSON data and re-renders
+// js/cms-loader.js - Fetches CMS JSON data and re-renders
 // dynamic page sections. Loaded after main.js.
 // ============================================================
 

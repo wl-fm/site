@@ -1,4 +1,4 @@
-// build.js — Merges per-entry _data/ JSON folders into combined JSON files
+// build.js - Merges per-entry _data/ JSON folders into combined JSON files
 // Run automatically by Cloudflare Pages before each deploy: `node build.js`
 
 const fs   = require('fs');
