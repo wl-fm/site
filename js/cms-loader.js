@@ -4,7 +4,10 @@
 // ============================================================
 
 (async function () {
-  const page = window.location.pathname.split('/').pop() || 'index.html';
+  // Normalize page path (e.g. /collections or /collections.html -> collections)
+  let pathSegments = window.location.pathname.replace(/\/$/, '').split('/');
+  let rawPage = pathSegments.pop() || 'index';
+  const page = rawPage.replace(/\.html$/, '') || 'index';
 
   // Get text for the correct language with EN fallback
   function t(obj, field) {
@@ -23,7 +26,7 @@
   }
 
   // ── Collections & Index pages ────────────────────────────────
-  if (page === 'collections.html' || page === 'index.html' || page === '') {
+  if (page === 'collections' || page === 'index') {
     try {
       const res = await fetch('/_data/products.json');
       if (!res.ok) return;
@@ -107,7 +110,7 @@
   }
 
   // ── Events page ──────────────────────────────────────────────
-  if (page === 'events.html') {
+  if (page === 'events') {
     try {
       const res = await fetch('/_data/events.json');
       if (!res.ok) return;
@@ -133,7 +136,7 @@
   }
 
   // ── FAQ page ─────────────────────────────────────────────────
-  if (page === 'faq.html') {
+  if (page === 'faq') {
     try {
       const res = await fetch('/_data/faq.json');
       if (!res.ok) return;
@@ -183,7 +186,7 @@
   }
 
   // ── About page ───────────────────────────────────────────────
-  if (page === 'about.html') {
+  if (page === 'about') {
     try {
       const res = await fetch('/_data/about.json');
       if (!res.ok) return;
