@@ -7,7 +7,7 @@ backend:
 # Local backend for development — uncomment when testing locally:
 # local_backend: true
 
-media_folder: "Assets/uploads"
+media_folder: "/Assets/uploads"
 public_folder: "/Assets/uploads"
 
 locale: "en"
@@ -23,7 +23,7 @@ collections:
     extension: "json"
     create: true
     slug: "{{fields.title | slugify}}"
-    media_folder: "Assets/Collection/{{slug}}"
+    media_folder: "/Assets/Collection/{{slug}}"
     public_folder: "/Assets/Collection/{{slug}}"
     sortable_fields: ['order', 'title']
     fields:
@@ -56,7 +56,7 @@ collections:
     extension: "json"
     create: true
     slug: "{{fields.title_en | slugify}}"
-    media_folder: "Assets/Events"
+    media_folder: "/Assets/Events"
     public_folder: "/Assets/Events"
     sortable_fields: ['order', 'title_en']
     fields:
