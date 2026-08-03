@@ -1,0 +1,183 @@
+[
+  {
+    "details": [
+      {
+        "en": "100% Cotton & Linen (plain fabric)",
+        "id": "100% Katun & Linen (kain polos)"
+      },
+      {
+        "en": "Hand-stamped Batik (Batik Cap)",
+        "id": "Batik Cap (Batik Tangan)"
+      },
+      {
+        "en": "Available in 8 colorways",
+        "id": "Tersedia dalam 8 warna"
+      },
+      {
+        "en": "Fit: Flexible fit across sizes",
+        "id": "Ukuran: Fleksibel di semua ukuran"
+      }
+    ],
+    "note_id": "Dilengkapi dengan kancing diskrit di bagian belakang leher untuk kemudahan pemakaian.",
+    "category_en": "Sleeveless Boxy Top",
+    "slug": "ayla",
+    "description_en": "Ayla's letter speaks of simplicity, calmness, and quiet warmth. The Ayla top reflects this through its clean minimal front and bright batik side panels, adding soft contrast and an effortless glow without feeling overwhelming.",
+    "order": 1,
+    "gallery": [
+      "/Assets/Collection/ayla-top/ayla-5.jpg",
+      "/Assets/Collection/ayla-top/ayla-4.jpg",
+      "/Assets/Collection/ayla-top/ayla-7.jpg",
+      "/Assets/Collection/ayla-top/ayla-9.jpg",
+      "/Assets/Collection/ayla-top/ayla-11.jpg"
+    ],
+    "main_image": "/Assets/Collection/ayla-top/img-20260730-wa0014.jpg",
+    "note_en": "Finished with a discreet button at the back of the neck for easy wear.",
+    "title": "Ayla Top",
+    "category_id": "Atasan Boxy Tanpa Lengan",
+    "description_id": "Surat Ayla berbicara tentang kesederhanaan, ketenangan, dan kehangatan yang tenang. Atasan Ayla mencerminkan hal ini melalui bagian depan yang bersih dan minimal serta panel batik cerah di sisi, menambahkan kontras lembut dan cahaya tanpa usaha tanpa terasa berlebihan."
+  },
+  {
+    "title": "Maya Top",
+    "slug": "maya",
+    "order": 2,
+    "category_en": "Square Neckline Tank",
+    "category_id": "Tank Leher Persegi",
+    "description_en": "Maya celebrates the beauty of contrast and complexity. Different batik panels at the front and back reflect depth and individuality, while the square neckline adds structure. A piece for women who carry softness and boldness at once.",
+    "description_id": "Maya merayakan keindahan kontras dan kompleksitas. Panel batik yang berbeda di depan dan belakang mencerminkan kedalaman dan individualitas, sementara leher persegi menambahkan struktur. Sebuah karya untuk wanita yang membawa kelembutan dan keberanian sekaligus.",
+    "note_en": "",
+    "note_id": "",
+    "details": [
+      {
+        "en": "100% Cotton",
+        "id": "100% Katun"
+      },
+      {
+        "en": "Hand-stamped Batik (Batik Cap)",
+        "id": "Batik Cap"
+      },
+      {
+        "en": "Available in 9 colorways",
+        "id": "Tersedia dalam 9 warna"
+      },
+      {
+        "en": "Fit: Flexible fit across sizes",
+        "id": "Ukuran: Fleksibel di semua ukuran"
+      }
+    ],
+    "main_image": "/Assets/Collection/maya-top/maya-2.jpg",
+    "gallery": [
+      "/Assets/Collection/maya-top/maya-2.jpg",
+      "/Assets/Collection/maya-top/maya-7.jpg",
+      "/Assets/Collection/maya-top/maya-8.jpg",
+      "/Assets/Collection/maya-top/maya-10.jpg",
+      "/Assets/Collection/maya-top/maya-11.jpg"
+    ]
+  },
+  {
+    "title": "Soraya Top",
+    "slug": "soraya",
+    "order": 3,
+    "category_en": "Sleeveless Kutubaru Top",
+    "category_id": "Atasan Kutubaru Tanpa Lengan",
+    "description_en": "Graceful on the outside and simple at heart, Soraya carries a quiet radiance. Its Kutubaru-inspired outer panel brings an elegant heritage touch, while the cropped inner layer keeps it easy and modern. A silhouette designed to shine effortlessly, wrapped in the warmth of tradition.",
+    "description_id": "Anggun di luar dan sederhana di dalam, Soraya membawa cahaya yang tenang. Panel luar berinspirasikan Kutubaru menghadirkan sentuhan warisan yang elegan, sementara lapisan dalam yang pendek membuatnya mudah dan modern. Sebuah siluet yang dirancang untuk bersinar tanpa usaha, dibungkus dalam kehangatan tradisi.",
+    "note_en": "",
+    "note_id": "",
+    "details": [
+      {
+        "en": "100% Cotton",
+        "id": "100% Katun"
+      },
+      {
+        "en": "Hand-stamped Batik (Batik Cap)",
+        "id": "Batik Cap"
+      },
+      {
+        "en": "Available in 6 colorways",
+        "id": "Tersedia dalam 6 warna"
+      },
+      {
+        "en": "Available in two sizes: S-M and L-XL",
+        "id": "Tersedia dalam dua ukuran: S-M dan L-XL"
+      }
+    ],
+    "main_image": "/Assets/Collection/soraya-top/soraya-2.jpg",
+    "gallery": [
+      "/Assets/Collection/soraya-top/soraya-2.jpg",
+      "/Assets/Collection/soraya-top/soraya-3.jpg",
+      "/Assets/Collection/soraya-top/soraya-4.jpg",
+      "/Assets/Collection/soraya-top/soraya-6.jpg"
+    ]
+  },
+  {
+    "title": "Laras Top",
+    "slug": "laras",
+    "order": 4,
+    "category_en": "Convertible Strap Top",
+    "category_id": "Atasan Tali Konvertibel",
+    "description_en": "Inspired by the Javanese word laras, meaning harmony and balance. The wide straps bring structure, while the elasticated bust moves comfortably with you. Calm, balanced, and effortless, Laras is designed to stay in tune with your body and your day.",
+    "description_id": "Terinspirasi dari kata Jawa laras, yang berarti harmoni dan keseimbangan. Tali lebar membawa struktur, sementara bust elastis bergerak dengan nyaman bersama Anda. Tenang, seimbang, dan tanpa usaha, Laras dirancang untuk tetap selaras dengan tubuh dan hari Anda.",
+    "note_en": "Designed with a hidden button and three buttonhole options on each strap, making it adjustable and can be worn strapped, crossed, or styled as a tube top.",
+    "note_id": "Dirancang dengan kancing tersembunyi dan tiga pilihan lubang kancing di setiap tali, membuatnya dapat disesuaikan dan dapat dipakai dengan tali, silang, atau dimodel sebagai tube top.",
+    "details": [
+      {
+        "en": "100% Cotton",
+        "id": "100% Katun"
+      },
+      {
+        "en": "Hand-stamped Batik (Batik Cap)",
+        "id": "Batik Cap"
+      },
+      {
+        "en": "Available in 8 colorways",
+        "id": "Tersedia dalam 8 warna"
+      },
+      {
+        "en": "Adjustable linen strap",
+        "id": "Tali linen yang dapat disesuaikan"
+      }
+    ],
+    "main_image": "/Assets/Collection/laras-top/laras-4.jpg",
+    "gallery": [
+      "/Assets/Collection/laras-top/laras-4.jpg",
+      "/Assets/Collection/laras-top/laras-5.jpg",
+      "/Assets/Collection/laras-top/laras-12.jpg",
+      "/Assets/Collection/laras-top/laras-13.jpg"
+    ]
+  },
+  {
+    "title": "Obi Belt",
+    "slug": "obi",
+    "order": 5,
+    "category_en": "The Finishing Touch",
+    "category_id": "Sentuhan Akhir",
+    "description_en": "The Obi Belt was created as a finishing touch. A piece that allows every silhouette to feel more personal, playful, and uniquely yours. Featuring two-tone batik combinations and a detachable strap, each piece can be styled and adjusted in multiple ways depending on the mood and moment.",
+    "description_id": "Obi Belt diciptakan sebagai sentuhan akhir. Sebuah karya yang membuat setiap siluet terasa lebih personal, menyenangkan, dan unik milik Anda. Menampilkan kombinasi batik dua warna dan tali yang dapat dilepas, setiap karya dapat dimodel dan disesuaikan dalam berbagai cara tergantung suasana hati dan momen.",
+    "note_en": "",
+    "note_id": "",
+    "details": [
+      {
+        "en": "100% Cotton",
+        "id": "100% Katun"
+      },
+      {
+        "en": "Hand-stamped Batik (Batik Cap)",
+        "id": "Batik Cap"
+      },
+      {
+        "en": "Available in 14 colorways",
+        "id": "Tersedia dalam 14 warna"
+      },
+      {
+        "en": "Detachable strap",
+        "id": "Tali yang dapat dilepas"
+      },
+      {
+        "en": "Reversible",
+        "id": "Dapat dibalik"
+      }
+    ],
+    "main_image": "/Assets/Collection/obi-belt/obi-belt-1.jpg",
+    "gallery": []
+  }
+]

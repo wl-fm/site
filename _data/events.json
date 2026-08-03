@@ -1,0 +1,29 @@
+[
+  {
+    "title_en": "Ubud Artisan Market: Easter Weekend",
+    "title_id": "Pasar Pengrajin Ubud: Akhir Pekan Paskah",
+    "meta": "Ubud Taman Baca, Bali \u2022 2026",
+    "description_en": "A celebration of local culture and mindful craftsmanship set in the heart of Ubud. Being part of the market opened With Love, From Mom to visitors from around the world, many discovering Indonesian batik through our pieces, falling in love with them, and bringing home more than just two.",
+    "description_id": "Sebuah perayaan budaya lokal dan kerajinan yang penuh perhatian yang berlangsung di jantung Ubud. Menjadi bagian dari pasar membuka With Love, From Mom bagi pengunjung dari seluruh dunia, banyak yang menemukan batik Indonesia melalui karya kami, jatuh cinta dengannya, dan membawa pulang lebih dari sekadar dua.",
+    "image": "/Assets/Events/Ubud.webp",
+    "order": 1
+  },
+  {
+    "title_en": "Pasar Keliling x Matalokal: Pasar Wanodya",
+    "title_id": "Pasar Keliling x Matalokal: Pasar Wanodya",
+    "meta": "M Bloc Space, Jakarta \u2022 2026",
+    "description_en": "Held shortly after Kartini Day, Pasar Wanodya celebrated women, creativity, and modern interpretations of local culture. One of the most memorable moments was seeing women across generations light up as they discovered batik silhouettes they could truly wear every day.",
+    "description_id": "Diselenggarakan tak lama setelah Hari Kartini, Pasar Wanodya merayakan perempuan, kreativitas, dan interpretasi modern budaya lokal. Salah satu momen paling berkesan adalah melihat wanita dari berbagai generasi bersinar saat mereka menemukan siluet batik yang benar-benar bisa mereka kenakan setiap hari.",
+    "image": "/Assets/Events/Wanodya.webp",
+    "order": 2
+  },
+  {
+    "title_en": "Pesta Folka: Gaya Raya",
+    "title_id": "Pesta Folka: Gaya Raya",
+    "meta": "Urban Forest, Jakarta \u2022 2025",
+    "description_en": "A gathering filled with stylish wastra lovers who already embraced traditional textiles as part of their identity and daily style. It felt especially meaningful to see them connect with With Love, From Mom through playful colors, versatile silhouettes, and a relaxed approach to wearing batik.",
+    "description_id": "Sebuah pertemuan yang dipenuhi oleh para pecinta wastra yang stylish yang sudah merangkul tekstil tradisional sebagai bagian dari identitas dan gaya sehari-hari mereka. Terasa sangat bermakna melihat mereka terhubung dengan With Love, From Mom melalui warna-warna yang menyenangkan, siluet yang serbaguna, dan pendekatan santai dalam memakai batik.",
+    "image": "/Assets/Events/gayaraya.webp",
+    "order": 3
+  }
+]

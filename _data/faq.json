@@ -1,0 +1,66 @@
+[
+  {
+    "question_en": "What makes your brand different from traditional batik clothing lines?",
+    "question_id": "Apa yang membuat merek Anda berbeda dari lini pakaian batik tradisional?",
+    "answer_en": "Our brand bridges the gap between heritage and contemporary style by redesigning traditional Indonesian textiles into modern, smart-casual everyday staples. Unlike formal or traditional pieces, our garments are specifically tailored for daily versatility, clean lines, and a high-class, minimalist aesthetic. Every piece is designed with a storytelling-led approach, making traditional craftsmanship accessible for your everyday wardrobe.",
+    "answer_id": "Merek kami menjembatani kesenjangan antara warisan dan gaya kontemporer dengan mendesain ulang tekstil tradisional Indonesia menjadi pakaian sehari-hari yang modern dan kasual-cerdas. Tidak seperti pakaian formal atau tradisional, pakaian kami dirancang khusus untuk fleksibilitas harian, garis yang bersih, dan estetika minimalis berkelas. Setiap karya dirancang dengan pendekatan berbasis cerita, menjadikan kerajinan tradisional mudah dijangkau untuk lemari pakaian sehari-hari Anda.",
+    "category": "brand",
+    "order": 1
+  },
+  {
+    "question_en": "Where are your garments designed and manufactured?",
+    "question_id": "Di mana pakaian Anda dirancang dan diproduksi?",
+    "answer_en": "All of our collections are proudly designed and sewn in Jakarta, Indonesia. However, our heart lies in the materials: we source our authentic batik fabrics directly from traditional artisans across Java, allowing us to closely collaborate with and support local craft communities.",
+    "answer_id": "Semua koleksi kami dengan bangga dirancang dan dijahit di Jakarta, Indonesia. Namun, hati kami ada pada materialnya: kami mendapatkan kain batik otentik langsung dari pengrajin tradisional di seluruh Jawa, memungkinkan kami untuk berkolaborasi erat dan mendukung komunitas kerajinan lokal.",
+    "category": "brand",
+    "order": 2
+  },
+  {
+    "question_en": "How is your batik made? Is it printed or authentic?",
+    "question_id": "Bagaimana batik Anda dibuat? Apakah dicetak atau otentik?",
+    "answer_en": "We are deeply committed to preserving artisanal craftsmanship. We do not use mass-produced textile prints. Instead, we exclusively focus on traditional hand-stamped techniques known as batik cap. Each pattern is hand-applied by skilled artisans using a traditional copper stamp (canting cap) and hot wax, making every single garment uniquely beautiful and authentic.",
+    "answer_id": "Kami sangat berkomitmen untuk melestarikan kerajinan artisanal. Kami tidak menggunakan cetakan tekstil massal. Sebaliknya, kami secara eksklusif fokus pada teknik cap tangan tradisional yang dikenal sebagai batik cap. Setiap pola diterapkan tangan oleh pengrajin terampil menggunakan cap tembaga tradisional (canting cap) dan malam panas, membuat setiap pakaian unik, indah, dan otentik.",
+    "category": "craftsmanship",
+    "order": 3
+  },
+  {
+    "question_en": "What materials and fabrics do you use?",
+    "question_id": "Material dan kain apa yang Anda gunakan?",
+    "answer_en": "To ensure our modern staples are breathable and perfect for daily wear, we strictly select premium natural fibers. Our collections feature grade-A cotton and linen blends. These fabrics are chosen for their durability, comfort in warm climates, and low environmental impact compared to synthetic materials.",
+    "answer_id": "Untuk memastikan pakaian modern kami breathable dan sempurna untuk dipakai sehari-hari, kami secara ketat memilih serat alami premium. Koleksi kami menampilkan campuran katun dan linen kelas A. Kain-kain ini dipilih karena daya tahannya, kenyamanannya di iklim hangat, dan dampak lingkungan yang rendah dibandingkan material sintetis.",
+    "category": "craftsmanship",
+    "order": 4
+  },
+  {
+    "question_en": "Why is your brand considered a slow fashion brand?",
+    "question_id": "Mengapa merek Anda dianggap sebagai merek mode lambat?",
+    "answer_en": "Sustainability is woven into every stage of our production. We practice slow fashion by creating small-batch capsule collections to prevent overproduction and textile waste. Furthermore, we practice zero-waste principles by repurposing our high-quality batik cotton and linen fabric scraps into useful daily essentials and accessories, such as custom lanyards, rather than sending them to a landfill.",
+    "answer_id": "Keberlanjutan terjalin di setiap tahap produksi kami. Kami mempraktikkan mode lambat dengan membuat koleksi kapsul batch kecil untuk mencegah produksi berlebih dan limbah tekstil. Selanjutnya, kami mempraktikkan prinsip zero-waste dengan mendaur ulang sisa kain batik katun dan linen berkualitas tinggi menjadi kebutuhan sehari-hari dan aksesori yang berguna, seperti lanyard khusus, daripada mengirimnya ke tempat pembuangan akhir.",
+    "category": "sustainability",
+    "order": 5
+  },
+  {
+    "question_en": "What do you do with your leftover fabric scraps?",
+    "question_id": "Apa yang Anda lakukan dengan sisa potongan kain?",
+    "answer_en": "We believe in a circular design economy. All of our leftover batik cotton and linen fabric scraps are collected and upcycled. Our design team repurposes these remnants into small, functional accessories like charms, lanyards, wristlets, and pouches. These are offered as sustainable daily essentials or included as special eco-friendly freebies in our customer packages.",
+    "answer_id": "Kami percaya pada ekonomi desain sirkular. Semua sisa potongan kain batik katun dan linen kami dikumpulkan dan didaur ulang. Tim desain kami mendaur ulang sisa-sisa ini menjadi aksesori kecil yang fungsional seperti charm, lanyard, wristlet, dan pouch. Ini ditawarkan sebagai kebutuhan sehari-hari yang berkelanjutan atau disertakan sebagai freebie ramah lingkungan istimewa dalam paket pelanggan kami.",
+    "category": "sustainability",
+    "order": 6
+  },
+  {
+    "question_en": "How should I wash and care for my garment?",
+    "question_id": "Bagaimana cara mencuci dan merawat pakaian saya?",
+    "answer_en": "Because our garments are crafted using authentic batik cap techniques and natural fibers, proper care will extend their lifespan significantly. We recommend hand washing in cold water with a mild, pH-neutral liquid detergent (or traditional lerak soap), or simply hand wash & body wash. Avoid bleach, do not wring tightly, and line dry in the shade out of direct sunlight to keep the natural colors vibrant. Iron on a warm setting.",
+    "answer_id": "Karena pakaian kami dibuat menggunakan teknik batik cap otentik dan serat alami, perawatan yang tepat akan memperpanjang masa pakainya secara signifikan. Kami merekomendasikan cuci tangan dengan air dingin menggunakan detergen cair yang lembut dan pH-netral (atau sabun lerak tradisional), atau cukup cuci tangan dan sabun badan. Hindari pemutih, jangan diperas terlalu kuat, dan jemur di tempat teduh jauh dari sinar matahari langsung agar warna alami tetap cerah. Setrika pada suhu hangat.",
+    "category": "care",
+    "order": 7
+  },
+  {
+    "question_en": "Do you ship internationally?",
+    "question_id": "Apakah Anda mengirim secara internasional?",
+    "answer_en": "Yes, we support international shipping to help share traditional Indonesian craftsmanship with the world. Domestically, we ship directly from our studio in Jakarta, Indonesia using trusted local couriers. Once your order is placed, you will receive a tracking number via email to follow your package's journey to your doorstep.",
+    "answer_id": "Ya, kami mendukung pengiriman internasional untuk membantu berbagi kerajinan tradisional Indonesia dengan dunia. Untuk domestik, kami mengirim langsung dari studio kami di Jakarta, Indonesia menggunakan kurir lokal terpercaya. Setelah pesanan Anda ditempatkan, Anda akan menerima nomor pelacakan melalui email untuk mengikuti perjalanan paket Anda ke pintu Anda.",
+    "category": "care",
+    "order": 8
+  }
+]
