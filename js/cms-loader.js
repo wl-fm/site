@@ -9,15 +9,39 @@
   let rawPage = pathSegments.pop() || 'index';
   const page = rawPage.replace(/\.html$/, '') || 'index';
 
+  // Parse Markdown & HTML formatting to HTML string for display
+  function formatRichText(str) {
+    if (!str) return '';
+    let html = str;
+    // Markdown bold: **text** or __text__
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/__(.*?)__/g, '<strong>$1</strong>');
+    // Markdown italic: *text* or _text_
+    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    html = html.replace(/_(.*?)_/g, '<em>$1</em>');
+    // Markdown links: [text](url)
+    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    // Newlines to linebreaks if not block HTML
+    if (!html.includes('<p>') && !html.includes('<br>')) {
+      html = html.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
+    }
+    return html;
+  }
+
   // Get text for the correct language with EN fallback
   function t(obj, field) {
     const lang = localStorage.getItem('wlfm-lang') || 'en';
-    return (obj[`${field}_${lang}`] || obj[`${field}_en`] || '').replace(/"/g, '&quot;');
+    return obj[`${field}_${lang}`] || obj[`${field}_en`] || '';
   }
 
-  // Escape text for safe attribute use
+  // Escape text for safe HTML attribute usage while preserving rich text HTML
+  function escAttr(str) {
+    return formatRichText(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  }
+
+  // Pure text attribute escaper (for titles, labels, etc.)
   function esc(str) {
-    return (str || '').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return (str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
   // After rendering, re-run main.js setup
@@ -70,11 +94,11 @@
             : '';
 
           const detailsHtml = (p.details || []).map(d =>
-            `<li data-en="${esc(d.en)}" data-id="${esc(d.id)}">${esc(d.en)}</li>`
+            `<li data-en="${escAttr(d.en)}" data-id="${escAttr(d.id)}">${formatRichText(d.en)}</li>`
           ).join('');
 
           const noteHtml = p.note_en
-            ? `<p style="margin-top:0.8rem" data-en="${esc(p.note_en)}" data-id="${esc(p.note_id || p.note_en)}">${esc(p.note_en)}</p>`
+            ? `<p style="margin-top:0.8rem" data-en="${escAttr(p.note_en)}" data-id="${escAttr(p.note_id || p.note_en)}">${formatRichText(p.note_en)}</p>`
             : '';
 
           const imageCol = `
@@ -88,7 +112,7 @@
             <div class="fade-in">
               <span class="section-label" data-en="${esc(t(p,'category'))}" data-id="${esc(p.category_id || '')}">${esc(t(p,'category'))}</span>
               <h2>${esc(p.title)}</h2>
-              <p style="margin-top:1rem" data-en="${esc(p.description_en)}" data-id="${esc(p.description_id || '')}">${esc(p.description_en)}</p>
+              <p style="margin-top:1rem" data-en="${escAttr(p.description_en)}" data-id="${escAttr(p.description_id || '')}">${formatRichText(t(p,'description'))}</p>
               ${noteHtml}
               <ul class="details-list" style="margin-top:2rem">${detailsHtml}</ul>
             </div>`;
@@ -126,7 +150,7 @@
           <div class="event-text fade-in">
             <div class="event-meta" data-en="${esc(ev.meta)}" data-id="${esc(ev.meta)}">${esc(ev.meta)}</div>
             <h3 data-en="${esc(ev.title_en)}" data-id="${esc(ev.title_id || ev.title_en)}">${esc(t(ev,'title'))}</h3>
-            <p data-en="${esc(ev.description_en)}" data-id="${esc(ev.description_id || ev.description_en)}">${esc(t(ev,'description'))}</p>
+            <p data-en="${escAttr(ev.description_en)}" data-id="${escAttr(ev.description_id || ev.description_en)}">${formatRichText(t(ev,'description'))}</p>
           </div>
         </article>`).join('');
       reInit();
@@ -172,7 +196,7 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                <p data-en="${esc(faq.answer_en)}" data-id="${esc(faq.answer_id || faq.answer_en)}">${esc(t(faq,'answer'))}</p>
+                <p data-en="${escAttr(faq.answer_en)}" data-id="${escAttr(faq.answer_id || faq.answer_en)}">${formatRichText(t(faq,'answer'))}</p>
               </div>
             </div>
           </div>`;
@@ -196,9 +220,11 @@
       function updateEl(selector, enVal, idVal) {
         const el = document.querySelector(selector);
         if (el) {
-          el.setAttribute('data-en', enVal);
-          el.setAttribute('data-id', idVal || enVal);
-          el.textContent = (localStorage.getItem('wlfm-lang') === 'id' && idVal) ? idVal : enVal;
+          const formattedEn = formatRichText(enVal);
+          const formattedId = formatRichText(idVal || enVal);
+          el.setAttribute('data-en', formattedEn);
+          el.setAttribute('data-id', formattedId);
+          el.innerHTML = (localStorage.getItem('wlfm-lang') === 'id' && formattedId) ? formattedId : formattedEn;
         }
       }
 
@@ -208,16 +234,24 @@
       // Vision & Purpose cards
       const vmCards = document.querySelectorAll('.vm-card');
       if (vmCards[0]) {
-        vmCards[0].querySelector('h3')?.setAttribute('data-en', about.vision_heading_en);
-        vmCards[0].querySelector('h3')?.setAttribute('data-id', about.vision_heading_id);
-        vmCards[0].querySelector('p')?.setAttribute('data-en', about.vision_en);
-        vmCards[0].querySelector('p')?.setAttribute('data-id', about.vision_id);
+        const visionEn = formatRichText(about.vision_en);
+        const visionId = formatRichText(about.vision_id || about.vision_en);
+        const visionH3En = esc(about.vision_heading_en);
+        const visionH3Id = esc(about.vision_heading_id);
+        const h3 = vmCards[0].querySelector('h3');
+        const p = vmCards[0].querySelector('p');
+        if (h3) { h3.setAttribute('data-en', visionH3En); h3.setAttribute('data-id', visionH3Id); }
+        if (p) { p.setAttribute('data-en', visionEn); p.setAttribute('data-id', visionId); p.innerHTML = (localStorage.getItem('wlfm-lang') === 'id' && visionId) ? visionId : visionEn; }
       }
       if (vmCards[1]) {
-        vmCards[1].querySelector('h3')?.setAttribute('data-en', about.purpose_heading_en);
-        vmCards[1].querySelector('h3')?.setAttribute('data-id', about.purpose_heading_id);
-        vmCards[1].querySelector('p')?.setAttribute('data-en', about.purpose_en);
-        vmCards[1].querySelector('p')?.setAttribute('data-id', about.purpose_id);
+        const purposeEn = formatRichText(about.purpose_en);
+        const purposeId = formatRichText(about.purpose_id || about.purpose_en);
+        const purposeH3En = esc(about.purpose_heading_en);
+        const purposeH3Id = esc(about.purpose_heading_id);
+        const h3 = vmCards[1].querySelector('h3');
+        const p = vmCards[1].querySelector('p');
+        if (h3) { h3.setAttribute('data-en', purposeH3En); h3.setAttribute('data-id', purposeH3Id); }
+        if (p) { p.setAttribute('data-en', purposeEn); p.setAttribute('data-id', purposeId); p.innerHTML = (localStorage.getItem('wlfm-lang') === 'id' && purposeId) ? purposeId : purposeEn; }
       }
       // Hero image
       const heroBg = document.querySelector('.page-hero .parallax-bg');
@@ -230,3 +264,4 @@
     }
   }
 })();
+

@@ -32,10 +32,10 @@ collections:
       - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
       - { label: "Category Label (EN)", name: "category_en", widget: "string", hint: "e.g. Sleeveless Boxy Top" }
       - { label: "Category Label (ID)", name: "category_id", widget: "string" }
-      - { label: "Description (EN)", name: "description_en", widget: "text" }
-      - { label: "Description (ID)", name: "description_id", widget: "text" }
-      - { label: "Second Paragraph / Note (EN)", name: "note_en", widget: "text", required: false }
-      - { label: "Second Paragraph / Note (ID)", name: "note_id", widget: "text", required: false }
+      - { label: "Description (EN)", name: "description_en", widget: "markdown" }
+      - { label: "Description (ID)", name: "description_id", widget: "markdown" }
+      - { label: "Second Paragraph / Note (EN)", name: "note_en", widget: "markdown", required: false }
+      - { label: "Second Paragraph / Note (ID)", name: "note_id", widget: "markdown", required: false }
       - label: "Details List"
         name: "details"
         widget: "list"
@@ -63,8 +63,8 @@ collections:
       - { label: "Event Title (EN)", name: "title_en", widget: "string" }
       - { label: "Event Title (ID)", name: "title_id", widget: "string" }
       - { label: "Location & Year", name: "meta", widget: "string", hint: "e.g. M Bloc Space, Jakarta • 2026" }
-      - { label: "Description (EN)", name: "description_en", widget: "text" }
-      - { label: "Description (ID)", name: "description_id", widget: "text" }
+      - { label: "Description (EN)", name: "description_en", widget: "markdown" }
+      - { label: "Description (ID)", name: "description_id", widget: "markdown" }
       - { label: "Cover Image", name: "image", widget: "image" }
       - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
 
@@ -80,8 +80,8 @@ collections:
     fields:
       - { label: "Question (EN)", name: "question_en", widget: "string" }
       - { label: "Question (ID)", name: "question_id", widget: "string" }
-      - { label: "Answer (EN)", name: "answer_en", widget: "text" }
-      - { label: "Answer (ID)", name: "answer_id", widget: "text" }
+      - { label: "Answer (EN)", name: "answer_en", widget: "markdown" }
+      - { label: "Answer (ID)", name: "answer_id", widget: "markdown" }
       - label: "Category"
         name: "category"
         widget: "select"
@@ -105,8 +105,8 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone / WhatsApp", name: "phone", widget: "string" }
           - { label: "Instagram Handle", name: "instagram", widget: "string" }
-          - { label: "Address (EN)", name: "address_en", widget: "text" }
-          - { label: "Address (ID)", name: "address_id", widget: "text" }
+          - { label: "Address (EN)", name: "address_en", widget: "markdown" }
+          - { label: "Address (ID)", name: "address_id", widget: "markdown" }
 
   # ── Pages ─────────────────────────────────────────────────────
   - name: "pages"
@@ -118,16 +118,16 @@ collections:
         fields:
           - { label: "Story Heading (EN)", name: "story_heading_en", widget: "string" }
           - { label: "Story Heading (ID)", name: "story_heading_id", widget: "string" }
-          - { label: "Story Body (EN)", name: "story_en", widget: "text" }
-          - { label: "Story Body (ID)", name: "story_id", widget: "text" }
+          - { label: "Story Body (EN)", name: "story_en", widget: "markdown" }
+          - { label: "Story Body (ID)", name: "story_id", widget: "markdown" }
           - { label: "Story Closing Line (EN)", name: "story_closing_en", widget: "string" }
           - { label: "Story Closing Line (ID)", name: "story_closing_id", widget: "string" }
           - { label: "Vision Heading (EN)", name: "vision_heading_en", widget: "string" }
           - { label: "Vision Heading (ID)", name: "vision_heading_id", widget: "string" }
-          - { label: "Vision Text (EN)", name: "vision_en", widget: "text" }
-          - { label: "Vision Text (ID)", name: "vision_id", widget: "text" }
+          - { label: "Vision Text (EN)", name: "vision_en", widget: "markdown" }
+          - { label: "Vision Text (ID)", name: "vision_id", widget: "markdown" }
           - { label: "Purpose Heading (EN)", name: "purpose_heading_en", widget: "string" }
           - { label: "Purpose Heading (ID)", name: "purpose_heading_id", widget: "string" }
-          - { label: "Purpose Text (EN)", name: "purpose_en", widget: "text" }
-          - { label: "Purpose Text (ID)", name: "purpose_id", widget: "text" }
+          - { label: "Purpose Text (EN)", name: "purpose_en", widget: "markdown" }
+          - { label: "Purpose Text (ID)", name: "purpose_id", widget: "markdown" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }

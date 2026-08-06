@@ -19,8 +19,7 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-en]').forEach(el => {
     const text = el.getAttribute('data-' + lang);
     if (text) {
-      if (text.includes('&')) { el.innerHTML = text; }
-      else { el.textContent = text; }
+      el.innerHTML = text;
     }
   });
 }
