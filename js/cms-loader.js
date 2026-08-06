@@ -73,6 +73,7 @@
               <div class="card-info">
                 <span class="card-label" data-en="${esc(t(p,'category'))}" data-id="${esc(p[`category_id`] || '')}">${esc(t(p,'category'))}</span>
                 <h3>${esc(p.title)}</h3>
+                ${p.price ? `<span class="card-price">${esc(p.price)}</span>` : ''}
               </div>
             </div>`).join('');
         reInit();
@@ -101,6 +102,12 @@
             ? `<p style="margin-top:0.8rem" data-en="${escAttr(p.note_en)}" data-id="${escAttr(p.note_id || p.note_en)}">${formatRichText(p.note_en)}</p>`
             : '';
 
+          const priceHtml = p.price
+            ? `<div class="product-price">${esc(p.price)}</div>`
+            : '';
+
+          const shopeeHtml = `<a href="${esc(p.shopee_url || 'https://shopee.co.id/lovemom.batik')}" target="_blank" rel="noopener" class="btn-shopee" data-en="Buy on Shopee" data-id="Beli di Shopee">Buy on Shopee</a>`;
+
           const imageCol = `
             <div class="fade-in">
               <img id="${esc(p.slug)}-main" class="collection-full-img"
@@ -112,9 +119,11 @@
             <div class="fade-in">
               <span class="section-label" data-en="${esc(t(p,'category'))}" data-id="${esc(p.category_id || '')}">${esc(t(p,'category'))}</span>
               <h2>${esc(p.title)}</h2>
-              <p style="margin-top:1rem" data-en="${escAttr(p.description_en)}" data-id="${escAttr(p.description_id || '')}">${formatRichText(t(p,'description'))}</p>
+              ${priceHtml}
+              <p style="margin-top:0.8rem" data-en="${escAttr(p.description_en)}" data-id="${escAttr(p.description_id || '')}">${formatRichText(t(p,'description'))}</p>
               ${noteHtml}
-              <ul class="details-list" style="margin-top:2rem">${detailsHtml}</ul>
+              <ul class="details-list" style="margin-top:1.5rem">${detailsHtml}</ul>
+              ${shopeeHtml}
             </div>`;
 
           return `

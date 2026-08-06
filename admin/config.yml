@@ -29,6 +29,8 @@ collections:
     fields:
       - { label: "Product Name", name: "title", widget: "string" }
       - { label: "Anchor / Slug", name: "slug", widget: "string", hint: "Short ID for page anchor, e.g. ayla" }
+      - { label: "Price", name: "price", widget: "string", hint: "e.g. Rp195.000" }
+      - { label: "Shopee URL", name: "shopee_url", widget: "string", required: false, hint: "Direct Shopee product link" }
       - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 99 }
       - { label: "Category Label (EN)", name: "category_en", widget: "string", hint: "e.g. Sleeveless Boxy Top" }
       - { label: "Category Label (ID)", name: "category_id", widget: "string" }
@@ -105,6 +107,7 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone / WhatsApp", name: "phone", widget: "string" }
           - { label: "Instagram Handle", name: "instagram", widget: "string" }
+          - { label: "Shopee Shop URL", name: "shopee", widget: "string" }
           - { label: "Address (EN)", name: "address_en", widget: "markdown" }
           - { label: "Address (ID)", name: "address_id", widget: "markdown" }
 
